@@ -1,4 +1,4 @@
-import { createSignal, createEffect } from "solid-js";
+import { createEffect, createSignal } from "solid-js";
 
 import type { Component } from "solid-js";
 
@@ -27,7 +27,7 @@ const App: Component = () => {
 
   return (
     <>
-      <p> Hello {name}!</p>
+      <p>Hello {name}!</p>
       {svg}
       {count()}
       <button onClick={() => setCount(count() + 1)}>Click Me</button>
